@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: lato, sans-serif;
+            margin: 0;
+            color: 40514E;
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            background-color: #e4e4e4;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        nav {
+            background-color: #0026ff;
+            color: rgb(252, 252, 252);
+            width: 100%;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .nav1 {
+            flex: 1;
+            text-align: left;
+
+        }
+        .nav2 {
+            flex: 1;
+            text-align: right;
+        }
+        .nav3 {
+            flex: 1;
+            text-align: left;
+        }
+        .nav4 {
+            float: right;
+            text-align: right;
+            margin-bottom: 20px;
+   
+        }
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+        .li1 {
+            display: inline-block;
+            margin-right: 20px;
+            border-right: 1px solid;
+            padding-right: 20px;
+        }
+        .li2 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .li3 {
+            display: inline-block;
+            margin-right: 10px;
+            border-right: 1px solid white;
+            padding-right: 20px;
+        }
+        .li4 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a {
+            text-decoration: none;;
+        }
+        .shop {
+            border: solid 1px;
+            padding: 5px;
+        }
+        .navbtn {
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .main {
+            margin: 40px;
+            position: relative;
+        }
+        .summary {
+            float: right;
+            background-color: #0026ff;
+            width: 300px;
+            height: 290px;
+        }
+        .list {
+            float: left;
+            max-width: 700px;
+        }
+    </style>
+    <title>Cart & Checkout Screen</title>
+</head>
+<nav>
+    <div class="navbar">
+        <div class="shop">
+            <h3>Mirezka <br> Goodies</h3>
+        </div>
+        <nav class="nav1">
+            <ul id="category">
+                <li class="li1"><a href="" style="color: white;">Home</a></li>
+                <li class="li1"><a href="" style="color: white;">About</a></li>
+                <li class="li1"><a href="" style="color: white;">Products</a></li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li class="li2"><button class="navbtn"><img width="20px" height="20px" src="./images/search.png" alt=""></button></li>
+                <li class="li2"><a href="./cart.html"><button class="navbtn"><img width="20px" height="20px" src="./images/cart.png" alt=""></button></a></li>
+                <li class="li2">Cart (1)</li>
+            </ul>
+        </nav>
+    </div>
+    </nav>
+<body>
+    <div class="main">
+        <div class="list">
+            <div style="margin-bottom: 40px;"><img width="70px" style="float: left; margin-right: 30px;" src="./images/check.png" alt="">
+                <p>Order 42069</p>
+                <h3>Thank you for your order!</h3></div>
+            <hr>
+            <div>
+                <p>Your order is confirmed.</p>
+                <p>We've accepted your order. We'll tell you when it's ready.</p>
+            </div>
+        <hr>
+        <div>
+            <h3>Customer Information</h2>
+                <div style="display: flex;">
+                    <ul style="list-style: none;max-width: 150px;">
+                        <li><p><b>Shipping Address</b></p></li>
+                        <li><p>siapa aja BISA</p></li>
+                        <li><a href>perumahan Cendekia blok c4 no 5 tangsel</a></p></li>
+                    </ul>
+                    <ul style="list-style: none;max-width: 150px;">
+                        <li><p><b>Billing Address</b></p></li>
+                        <li><p>siapa hayooo</p></li>
+                        <li><a href>planet Bintaro</a></p></li>
+                    </ul>
+                </div>
+                <div style="display: flex;">
+                    <ul style="list-style: none; max-width: 150px;">
+                    <li><p><b>Shipping Method</b></p></li>
+                    <li><p>JNE REG (Estimated ship time of 3-6 days)</p></li>
+                    </ul>
+                    <ul style="list-style: none; max-width: 200px;">
+                        <li><p><b>Payment Method</b></p></li>
+                        <li><p>Ending in 3217 - Rp.700.000</p></li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+        <div style="color: rgb(240, 240, 240); padding-left: 10px; padding-bottom: 20px;" class="summary" >
+            <div style="margin: 30px 30px 10px 13px;">
+            <h3>Summary &nbsp; (1) Item(s)</h3>
+            <p>Subtotal &emsp;&emsp;:&emsp;$20.00</p>
+            <p>Shopping &emsp;&nbsp;&nbsp;&nbsp;:&emsp;$2.20</p>
+            <p>Est. Taxes &emsp;&nbsp;&nbsp;:&emsp;$1.40</p>
+            <hr>
+            <p>Gift Card or Discount Code</p>
+            <input type="text"> <button type="submit">Apply</button> 
+            <hr>
+            <p><b>Total&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&emsp;$23.60</b></p>
+            </div>
+        </div>
+    </div>
+    <nav style="display: inline-block;width: 100%; height: 150px;">
+        <div class="navbar">
+            <div class="shop">
+                <h3>Mirezka <br> Goodies</h3>
+            </div>
+            <nav class="nav1">
+                <ul id="category">
+                    <li class="li1"><a href="" style="color: white;">Category X</a></li>
+                    <li class="li1"><a href="" style="color: white;">Category Y</a></li>
+                    <li class="li1"><a href="" style="color: white;">Category Z</a></li>
+                </ul>
+            </nav>
+            <nav class="nav2">
+                <ul>
+                    <li style="margin-bottom: 10px; text-align:left;">Keep in touch</li>
+                    <input style="margin-bottom: 10px;" type="text" name="" id=""><br>
+                    <button style="float: left;">Submit</button>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</body>
+</html>

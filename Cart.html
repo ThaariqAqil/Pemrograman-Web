@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: lato, sans-serif;
+            margin: 0;
+            color: 40514E;
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            background-color: #e4e4e4;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        nav {
+            background-color: #0026ff;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .nav1 {
+            flex: 1;
+            text-align: left;
+
+        }
+        .nav2 {
+            flex: 1;
+            text-align: right;
+        }
+        .nav3 {
+            flex: 1;
+            text-align: left;
+        }
+        .nav4 {
+            float: right;
+            text-align: right;
+            margin-bottom: 20px;
+   
+        }
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+        .li1 {
+            display: inline-block;
+            margin-right: 20px;
+            border-right: 1px solid;
+            padding-right: 20px;
+        }
+        .li2 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .li3 {
+            display: inline-block;
+            margin-right: 10px;
+            border-right: 1px solid white;
+            padding-right: 20px;
+        }
+        .li4 {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #e4e4e4;
+        }
+        .shop {
+            border: solid 1px;
+            padding: 5px;
+        }
+        .navbtn {
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .main {
+            margin: 40px;
+        }
+        .summary {
+            float: right;
+            background-color: #0026ff;
+            width: 300px;
+            height: 290px;
+        }
+        .list {
+            float: left;
+            max-width: 500px;
+            padding: 0 0 100px;
+        }
+
+    </style>
+    <title>Cart & Checkout Screen</title>
+</head>
+<nav>
+    <div class="navbar">
+        <div class="shop">
+            <h3>Mirezka <br> Goodies</h3>
+        </div>
+        <nav class="nav1">
+            <ul id="category">
+                <li class="li1"><a href="">Home</a></li>
+                <li class="li1"><a href="">About</a></li>
+                <li class="li1"><a href=""></a>Products</li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li class="li2"><button class="navbtn"><img width="20px" height="20px" src="./images/search.png" alt=""></button></li>
+                <li class="li2"><a href="./cart.html"><button class="navbtn"><img width="20px" height="20px" src="./images/cart.png" alt=""></button></a></li>
+                <li class="li2">Cart (1)</li>
+            </ul>
+        </nav>
+    </div>
+    </nav>
+<body>
+    <div class="main">
+        <div class="list">
+            <h2>Your Cart</h2>
+            <table>
+                <th style="padding-left: 50px;">Item</th>
+                <th style="padding-left: 275px;">Price</th>
+                <th style="padding-left: 50px;">Quantity</th>
+            </table>
+            <hr>
+            <table>
+                <td style="padding-left: 10px; padding-top: 10px;">
+                    <img src="./images/baju.png" width="100">
+                </td>
+                <td style="padding-left: 10px;">
+                    Petir "Kachow" Shirt
+                    <br>
+                    <select name="size">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </td>
+                <td style="padding-left: 160px;">$20.00</td>
+                <td style="padding-left: 50px;">
+                    <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">5</option>
+                    <option value="3">10</option>
+                    <option value="5">15</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    </select>
+                </td>
+            </table>
+        </div>
+        <div style="color: rgb(255, 255, 255); padding-left: 10px; padding-bottom: 20px;" class="summary" >
+            <div style="margin: 30px 30px 10px 13px;">
+            <h3>Summary &nbsp; (1)</h3>
+            <p>Subtotal &emsp;&emsp;:&emsp;Rp.700.000</p>
+            <p>Shopping &emsp;&nbsp;&nbsp;&nbsp;:&emsp;-</p>
+            <p>Est. Taxes &emsp;&nbsp;&nbsp;:&emsp;-</p>
+            <hr>
+            <p><b>Total&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&emsp;$20.00</b></p>
+            <a href="./index.html"><button style="background-color: rgb(255, 255, 255); border:none;align-items: center;margin: 20px 80px; width: 100px; height: 30px;"><b>Checkout</b></button></a>
+            </div>
+        </div>
+    </div>
+    <nav style="display: inline-block; width: 100%; height: 150px;">
+        <div class="navbar">
+            <div class="shop">
+                <h3>Mirezka <br> Goodies</h3>
+            </div>
+            <nav class="nav1">
+                <ul id="category">
+                    <li class="li1"><a href="">Category X</a></li>
+                    <li class="li1"><a href="">Category Y</a></li>
+                    <li class="li1"><a href="">Category Z</a></li>
+                </ul>
+            </nav>
+            <nav class="nav2">
+                <ul>
+                    <li style="margin-bottom: 10px; text-align:left;">Keep in touch</li>
+                    <input style="margin-bottom: 10px;" type="text" name="" id=""><br>
+                    <button style="float: left;">Submit</button>
+                </ul>
+            </nav>
+        </div>
+        </nav>
+</body>
+</html>
